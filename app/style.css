@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+:root {
+	--main-color: #1d1e35;
+}
+
+body {
+	background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	max-width: 100%;
+}
+
+.container {
+	background-color: #fff;
+	width: 1000px;
+	height: 530px;
+	padding: 0;
+	border-radius: 20px;
+	box-shadow: 0px 13px 8px 5px rgba(39, 43, 119, 0.2);
+}
+
+h1 {
+	color: var(--main-color);
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	font-weight: 900;
+	font-size: 35px;
+}
+
+hr {
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	color: #e7e7e9;
+	width: 95%;
+}
+
+button.active {
+	font-weight: bold;
+}
+
+.accordion {
+	background-color: #fff;
+	color: var(--main-color);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+}
+
+.accordion:after {
+	content: url(/images/icon-arrow-down.svg);
+	float: right;
+}
+
+.active:after {
+	content: url(/images/icon-arrow-down.svg);
+	transform: rotate(180deg);
+}
+
+.panel {
+	display: none;
+	color: var(--main-color);
+	line-height: 17px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 0 18px;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+
+.faq {
+	border-radius: 20px;
+	float: right;
+	position: relative;
+	width: 50%;
+	background-color: #fff;
+	padding: 50px 50px 0 0;
+}
+
+.images {
+	height: 100%;
+	float: left;
+	position: relative;
+	display: flex;
+	width: 50%;
+	overflow: hidden;
+}
+
+.pattern {
+	position: absolute;
+	height: 945px;
+	width: 966px;
+	top: -288px;
+	left: -563px;
+}
+
+.box {
+	position: absolute;
+	height: 184px;
+	width: 191px;
+	left: -592px;
+	top: 191px;
+}
+
+.image_woman {
+	position: absolute;
+	top: 59px;
+	right: 10px;
+	left: -80px;
+	width: 472px;
+	height: 359px;
+	z-index: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: var(--main-color);
+}
+.attribution a {
+	color: var(--main-color);
+}
